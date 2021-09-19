@@ -49,7 +49,7 @@ main {
 }
 
 #free:hover,
-#free:active {
+#free:active { 
   border-left-color: #ff5454;
 }
 
