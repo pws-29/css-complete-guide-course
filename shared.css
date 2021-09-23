@@ -8,18 +8,29 @@ body {
   margin: 0;
 }
 
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0; /* To avoid margin collapse */
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
 /* HEADER ---------------------------------- */
 
 .main-header {
-  position: fixed;
   width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
-  
   background: #2ddf5c;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
+  z-index: 1;
 }
+
 
 .main-header > div {
   display: inline-block;
@@ -30,11 +41,11 @@ body {
   color: #0e4f1f;
   text-decoration: none; /* Tirar underline padrao do browser */
   font-weight: bold;
-  font-size: 22px;
+  font-size: 1.5rem;
 
   display: inline-block;
 
-  height: 22px;
+  height: 1.5rem;
 }
 
 .main-header__brand img {
@@ -57,7 +68,7 @@ body {
 
 .main-nav__item {
   display: inline-block; /* Lado a lado, mas podemos definir as box properties */
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 
@@ -65,7 +76,7 @@ body {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  padding: 3px 0;
+  padding: 0.2rem 0;
 }
 
 
@@ -79,7 +90,7 @@ body {
 .main-nav__item--cta a {
   color: white;
   background: #ff1b68;
-  padding: 8px 16px;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
 }
 
@@ -94,8 +105,8 @@ body {
 
 .main-footer {
   background: black;
-  padding: 32px;
-  margin-top: 48px;
+  padding: 2rem;
+  margin-top: 3rem;
 }
 
 .main-footer__links {
@@ -107,7 +118,7 @@ body {
 
 .main-footer__link {
   display: inline-block;
-  margin: 0 16px;
+  margin: 0 1rem;
 }
 
 .main-footer__link > a {
@@ -127,8 +138,8 @@ body {
   color: #fff;
   font: inherit; /* forces the inherit styles to be applied, instead browser pattern */
   border: 1.5px solid #0e4f1f;
-  padding: 8px;
-  border-radius: 7px;
+  padding: 0.5;
+  border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
 }
